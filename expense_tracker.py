@@ -1,6 +1,7 @@
 #importing the datetime module to display the date and time on which a particular expense was made 
 import datetime
 
+#This fuction adds a new expense to the existing list of expenses 
 def add_expense():
     des = input("Enter the description: ")
     amt = float(input(f"How much have you spent on {des}? "))
