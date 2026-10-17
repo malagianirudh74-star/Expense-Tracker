@@ -3,7 +3,10 @@ import datetime
 
 #This fuction adds a new expense to the existing list of expenses 
 def add_expense():
+    #input the description of the expense 
     des = input("Enter the description: ")
+
+    #input the amount spent on that particular expense
     amt = float(input(f"How much have you spent on {des}? "))
     expense = {"description" : des, "amount" : amt, "date" : datetime.datetime.now().strftime("%d-%b-%Y")}
     expenses.append(expense)
