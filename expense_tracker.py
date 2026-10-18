@@ -17,6 +17,7 @@ def add_expense():
     expenses.append(expense)
     print("Expense added successfullly")
 
+#This function displays all the undeleted expenses recorded till date 
 def view_expenses():
     print("\n----EXPENSE TRACKER----")
     print("\n DESCRIPTION \t AMOUNT \t DATE")
