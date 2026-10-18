@@ -25,7 +25,7 @@ def view_expenses():
     print("\n DESCRIPTION \t AMOUNT \t DATE")
     print("\n")
 
-    #display the expenses by numbering them starting from 1 
+    #enumerate displays the expenses by numbering them starting from 1 
     for number,expense in enumerate(expenses, start=1):
         print(f"{number} \t {expense['description']} \t {expense['amount']} \t {expense['date']}")
 
