@@ -12,7 +12,8 @@ def add_expense():
     '''Now create a dictionary using the input information. Here strftime() function gives the formatted date on which
     expense was recorded'''
     expense = {"description" : des, "amount" : amt, "date" : datetime.datetime.now().strftime("%d-%b-%Y")}
-    
+
+    #Append the newly created expense to the list of the previous recorded expenses
     expenses.append(expense)
     print("Expense added successfullly")
 
