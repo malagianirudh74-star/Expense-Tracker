@@ -20,8 +20,12 @@ def add_expense():
 #This function displays all the undeleted expenses recorded till date 
 def view_expenses():
     print("\n----EXPENSE TRACKER----")
+
+    #Display the headings of each column 
     print("\n DESCRIPTION \t AMOUNT \t DATE")
     print("\n")
+
+    #enumerate b 
     for number,expense in enumerate(expenses, start=1):
         print(f"{number} \t {expense['description']} \t {expense['amount']} \t {expense['date']}")
 
