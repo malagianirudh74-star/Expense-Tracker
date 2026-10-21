@@ -31,6 +31,8 @@ def view_expenses():
 
 #This function calculates the total expense - sum of all the exxpenses 
 def total_expense():
+
+    #initially sum is initiallized to 0
     sum = 0
     for expense in expenses:
         sum += expense["amount"]
