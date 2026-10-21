@@ -35,10 +35,12 @@ def total_expense():
     #initially sum is initiallized to 0
     sum = 0
 
-    #lop through every expense dictionary in the list and access the corresponding value of the key "amount" in each
+    #loop through every expense dictionary in the list and access the corresponding value of the key "amount" in each
     #dictionary and add it to the sum
     for expense in expenses:
         sum += expense["amount"]
+
+    #Print the total expense 
     print("Total expense is: ",sum)
 
 def ask_to_continue():
