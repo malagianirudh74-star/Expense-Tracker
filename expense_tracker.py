@@ -29,6 +29,7 @@ def view_expenses():
     for number,expense in enumerate(expenses, start=1):
         print(f"{number} \t {expense['description']} \t {expense['amount']} \t {expense['date']}")
 
+#This function calculates the total expense - sum of all the exxpenses 
 def total_expense():
     sum = 0
     for expense in expenses:
