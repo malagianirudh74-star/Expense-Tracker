@@ -43,6 +43,8 @@ def total_expense():
     #Print the total expense 
     print("Total expense is: ",sum)
 
+#Declare a function which asks the user's choice as to continue with the application or not and return the choice back to
+#the calling function
 def ask_to_continue():
     ch = int(input("do you want to continue? \n1.Yes \n2.No \nEnter 1 or 2: "))
     return ch                
