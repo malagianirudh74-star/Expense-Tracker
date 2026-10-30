@@ -49,6 +49,7 @@ def ask_to_continue():
     ch = int(input("do you want to continue? \n1.Yes \n2.No \nEnter 1 or 2: "))
     return ch                
 
+#A list to store all the expenses 
 expenses = []
 
 while True:
