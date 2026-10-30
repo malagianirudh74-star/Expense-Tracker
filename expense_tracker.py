@@ -52,6 +52,7 @@ def ask_to_continue():
 #A list to store all the expenses 
 expenses = []
 
+#Repeat providing the service to the user until he/she wishes to quit working with the expense tracker applicatiion  
 while True:
     print("1. Add Expense")
     print("2. View Expense")
