@@ -65,6 +65,7 @@ while True:
     ch = int(input("Enter your choice: "))
 
     if ch == 1:
+        #Continue adding expenses until user wishes to  quit 
         while True:
             add_expense()
             ch = ask_to_continue()
