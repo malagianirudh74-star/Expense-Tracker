@@ -61,6 +61,7 @@ while True:
     print("3. Compute Total Expense")
     print("4. Exit")
 
+    #Ask for user's choice
     ch = int(input("Enter your choice: "))
 
     if ch == 1:
