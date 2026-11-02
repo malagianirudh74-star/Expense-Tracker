@@ -54,6 +54,8 @@ expenses = []
 
 #Repeat providing the service to the user until he/she wishes to quit working with the expense tracker applicatiion  
 while True:
+
+    #display the menu for the user
     print("1. Add Expense")
     print("2. View Expense")
     print("3. Compute Total Expense")
