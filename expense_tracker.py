@@ -83,10 +83,12 @@ while True:
 
     elif ch == 3:
 
-        #calua
+        #call the function to calculate the sum of all expenses
         total_expense()
 
     elif ch == 4:
+
+        
         print("Exiting - Thank You")
         break
 
