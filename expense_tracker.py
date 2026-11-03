@@ -67,6 +67,8 @@ while True:
     if ch == 1:
         #Continue adding expenses until user wishes to  quit 
         while True:
+
+            #call the function to add the expense
             add_expense()
             ch = ask_to_continue()
             if ch == 1:
