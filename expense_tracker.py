@@ -77,6 +77,8 @@ while True:
                 break
 
     elif ch == 2:
+
+        #call the function to view the expenses recorded till date 
         view_expenses()
 
     elif ch == 3:
