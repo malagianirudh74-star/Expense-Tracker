@@ -88,7 +88,7 @@ while True:
 
     elif ch == 4:
 
-        
+        #print exit message and terminate the loop using break statement 
         print("Exiting - Thank You")
         break
 
