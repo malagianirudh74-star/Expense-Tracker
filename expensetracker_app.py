@@ -101,6 +101,45 @@ def home():
         categories=categories
     )
 
+# ============================================================
+# CALCULATE TOTAL EXPENSES
+# ============================================================
+
+@app.route("/total")
+def calculate_total():
+
+    connection = get_db_connection()
+
+    # Calculate the total amount spent.
+    total = connection.execute(
+        "SELECT SUM(amount) FROM expenses"
+    ).fetchone()[0]
+
+    if total is None:
+        total = 0
+
+    # Count the total number of transactions.
+    count = connection.execute(
+        "SELECT COUNT(*) FROM expenses"
+    ).fetchone()[0]
+
+    # Calculate category-wise expenses.
+    categories = connection.execute("""
+        SELECT category, SUM(amount) AS category_total
+        FROM expenses
+        GROUP BY category
+        ORDER BY category_total DESC
+    """).fetchall()
+
+    connection.close()
+
+    return render_template(
+        "total.html",
+        total=total,
+        count=count,
+        categories=categories
+    )
+
 
 # ============================================================
 # 6. ADD EXPENSE
