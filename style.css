@@ -483,3 +483,56 @@ footer {
     }
 
 }
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+
+.navigation {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+.navigation a,
+.back-button {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+}
+
+.navigation a:hover,
+.back-button:hover {
+
+    background-color: #1d4ed8;
+
+}
+
+
+/* ============================================================
+   BACK BUTTON
+   ============================================================ */
+
+.back-button {
+
+    margin-top: 10px;
+
+}
