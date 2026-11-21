@@ -6,7 +6,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 import sqlite3
 import datetime
 
-#Flask is a framework that connects the backend with frontend 
+#Flask is a framework that connects the backend with the frontend 
 # ============================================================
 # 2. CREATE THE FLASK APPLICATION
 # ============================================================
